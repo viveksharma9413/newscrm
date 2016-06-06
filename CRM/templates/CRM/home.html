@@ -1,0 +1,70 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News Mailing List - Home</title>
+	<meta name="keywords" content="mailing list, news Mailing list" />
+	{% block styling %}
+		<link href="{% static 'css/home.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'css/common.css' %}" rel="stylesheet" type="text/css">
+	{% endblock styling %}
+</head>
+<body>
+    <div class="header">
+        <!--<div class="logo"><img src = "images/logo1.jpg"></div>-->
+        <h1>NEWS MAILER</h1>
+        <div class="logo"></div>
+        <a href="/CRM/home">HOME</a>
+        <a href="/CRM/subscribe">REGISTER</a>
+    </div>
+    <div class="footer">
+        <a href="#pointerAboutUs">ABOUT US</a>
+        <a href="#containerContactUs">CONTACT US</a>
+    </div>
+        <!--div-- class="background"><h1>HOME</h1></div-->
+
+
+        <div id="content">
+            <h5>DONT WAIT FOR NEWSPAPER TO ARRIVE AT YOUR DOORSTEP</h5><h2 style="color:azure">NEWS<br />MAILING LIST</h2>
+            <a href="/CRM/subscribe">SUBSCRIBE</a>
+            <div id="pointerAboutUs"></div>
+
+            <div id="containerAboutUs">
+
+                <h2>ABOUT US</h2><hr/>
+                <div id="insideContent">
+                    <p>We offer news personalized as per our customers need.</p><br>
+                    <p>In this fast paced world reading a newspaper seems impossible task as theres no time to stop and read anythinng; So why not provide the news on the go; We provide you the power to read relevant news whenever and wherever you want.</p><br>
+                    <p>Our system generates and sends the top daily news to the customers about the Category of news he is interested in, saving his time from not going through all the irrelevant news in the newspaper.</p><br>
+                    <p>Subscribe to our mailing list and remain updated about what is happening around the globe</p><br>
+                </div>
+            </div>
+
+            <h2>Contact US</h2><hr/>
+            <div id="containerContactUs" style="">
+                <div id="insideContent1">
+                    <h3 style="color:white;">Head-Office Address</h3>
+                    <p>Sinhgad Academy of Engineering,</p>
+                    <p>Kondhwa(BK), Pune</p>
+                    <p>Pin Code - 411048</p>
+                    <p>Email: viveksharma9413@gmail.com</p>
+
+                </div>
+                <div id="insideContent2">
+                    <br><br><p>Do you have other questions or suggestion?</p>
+                    <p>Get in touch with us through the provided email and we’ll get back to you as soon as possible</p>
+                    <p>(usually within one business day).</p>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>
+</html>

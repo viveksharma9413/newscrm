@@ -1,0 +1,39 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News Mailing List - Mailer</title>
+	<meta name="keywords" content="mailing list, news Mailing list" />
+	{% block styling %}
+        <link href="{% static 'css/control.css' %}" rel="stylesheet" type="text/css">
+		<link href="{% static 'css/adminhome.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'css/common.css' %}" rel="stylesheet" type="text/css">
+	{% endblock styling %}
+</head>
+<body>
+    <div class="header">
+        <!--<div class="logo"><img src = "images/logo1.jpg"></div>-->
+        <h1>NEWS MAILER ADMIN</h1>
+        <div class="logo"></div>
+        <a href="/CRM/adminHome">HOME</a>
+        <a href="/CRM/logout">LOGOUT</a>
+    </div>
+    <div class="footer">
+    </div>
+        <!--div-- class="background"><h1>HOME</h1></div-->
+
+
+        <div id="content">
+            <!--h5>DONT WAIT FOR NEWSPAPER TO ARRIVE AT YOUR DOORSTEP</h5><h2 style="color:azure">NEWS<br />MAILING LIST</h2-->
+            <form action="" method="post" name="controlForm">{% csrf_token %}
+                <center><h2>{{message}}</h2></center>
+                <section><input type="submit" value="fetch" name="action" id="fetch"><br><b>Fetch News</b></section>
+                <section><input type="submit" value="mail" name="action" id="mail"><br><b>Send Mail</b></section>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>

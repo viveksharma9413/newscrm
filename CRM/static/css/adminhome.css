@@ -1,0 +1,118 @@
+body
+    {
+        background-image:url("../images/background.jpg");
+        background-size:     cover;
+        background-repeat: no;
+        min-width : 1220px
+        background-repeat: no-repeat;
+		background-attachment: fixed ;
+		/*background-size: 100% 100%;*/
+    }
+h5
+    {
+			font-family: "Droid Sans";
+			font-weight: bold;
+            color:White;
+            font-size:20px;
+            text-align:center;
+    }
+h2,h3,h4,h6
+    {
+			font-family: "Droid Sans";
+			font-weight: bold;
+            color:white;
+            text-align:center;
+    }
+a
+	{
+
+		font-weight: bold;
+		font-family: "Droid Sans";
+		font-size: 18px;
+		padding-left:8px;
+		padding-right:8px;
+		border:2px;
+	}
+
+a:link
+	{
+		color: white;
+    		text-decoration: none;
+	}
+
+a:visited
+	{
+    		color: white;
+    		text-decoration: none;
+	}
+
+a:hover
+	{
+		color:black;
+		background-color:White;
+		text-decoration: none;
+	}
+
+a:active
+	{
+    	color: white;
+		text-decoration: none;
+	}
+#content
+    {
+        top: 230px;
+        position:relative;
+        text-align:center;
+    }
+
+#content a
+    {
+        font-weight: bold;
+        font-family: "Droid Sans";
+		font-size: 18px;
+		padding:5px 18px;
+		border:2px;
+		color:white;
+		margin:40px;
+		background-color:black;
+		text-decoration:none;
+		align:center;
+    }
+#content a:hover
+	{
+		color:black;
+		background-color:White;
+		text-decoration: none;
+	}
+img
+    {
+        height:100px;
+        width:100px;
+    }
+
+.Box
+	{
+		float:left;
+		display:block;
+		padding-top:15px;
+		position:absolute;
+		top:15%;
+		margin:80px 450px;
+		width:440px;
+		height:250px;
+		text-align:center;
+		color:white;
+		background-color:grey;
+		opacity:0.8;
+		border-radius:10px;
+		font-family: "Droid Sans";
+
+	}
+
+.Box > h1
+	{
+			position:relative;
+			font-family: "Droid Sans";
+			font-weight: bold;
+	}
+

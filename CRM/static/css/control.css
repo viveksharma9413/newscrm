@@ -1,0 +1,37 @@
+section
+{
+    float:left;
+    margin:left:400px;
+    position:relative;
+    margin-left:300px;
+    align:center;
+    color:white;
+}
+
+#fetch
+{
+    height:200px;
+    width:200px;
+    background:url("../images/fetch-news.png") no-repeat;
+    background-size: cover;
+    cursor:pointer;
+    border: none;
+}
+
+#mail
+{
+    height:200px;
+    width:200px;
+    background:url("../images/mail-icon.png") no-repeat;
+    background-size: cover;
+    cursor:pointer;
+    border: none;
+}
+
+form h2
+    {
+			font-family: "Droid Sans";
+			font-weight: bold;
+            color:white;
+            text-align:center;
+    }

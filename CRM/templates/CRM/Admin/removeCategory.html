@@ -1,0 +1,41 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News Mailing list - Admin</title>
+    <meta name="keywords" content="news unsubscribe" />
+	{% block styling %}
+		<link href="{% static 'css/adminhome.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'css/common.css' %}" rel="stylesheet" type="text/css">
+	{% endblock styling %}
+
+</head>
+<body>
+    <div class="header">
+        <h1>NEWS MAILER ADMIN</h1>
+        <div class="logo"></div>
+        <a href="/CRM/adminHome">HOME</a>
+        <a href="/CRM/logout">LOGOUT</a>
+    </div>
+    <div class="footer">
+    </div>
+
+    <div class="Box">
+        <h1>REMOVE CATEGORY<BR/></h1>
+        <font color="red" size="3"><b>{{message}}</b></font>
+        <br><center><table>
+        <form action="" method="post" name="addCategoryForm">{% csrf_token %}
+            <tr><td>Category : <td><select name="category" value="">
+                {% autoescape off %}
+                    {{options}}
+                {% endautoescape off %}
+            </select>
+            <tr><td><td align=right><input type="reset" value="    Reset    " name="reset"><input onclick="return confirm('Are you sure??')" type=submit value="  Remove  " name="remove"></tr>
+
+        </form>
+        </table></center>
+    </div>
+
+</body>
+</html>

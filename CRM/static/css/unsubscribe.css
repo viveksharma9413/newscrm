@@ -1,0 +1,70 @@
+body
+    {
+        background-image:url("../images/unsubscribe.jpeg");
+        background-size:     cover;
+        background-repeat: no;
+        min-width : 1220px
+        background-repeat: no-repeat;
+		background-attachment: fixed ;
+		/*background-size: 100% 100%;*/
+    }
+a
+	{
+		font-weight: bold;
+		font-family: "Droid Sans";
+		font-size: 18px;
+		padding-left:8px;
+		padding-right:8px;
+		border:2px;
+	}
+
+a:link
+	{
+		color: white;
+    		text-decoration: none;
+	}
+
+a:visited
+	{
+    		color: white;
+    		text-decoration: none;
+	}
+
+a:hover
+	{
+		color:black;
+		background-color:White;
+		text-decoration: none;
+	}
+
+a:active
+	{
+    	color: white;
+		text-decoration: none;
+	}
+
+.unsubscribeBox
+	{
+		float:left;
+		display:block;
+		padding-top:15px;
+		position:absolute;
+		top:15%;
+		margin:80px 450px;
+		width:450px;
+		height:310px;
+		text-align:center;
+		color:white;
+		background-color:grey;
+		opacity:0.8;
+		border-radius:20px;
+		font-family: "Droid Sans";
+
+	}
+
+.unsubscribeBox > h1
+	{
+			position:relative;
+			font-family: "Droid Sans";
+			font-weight: bold;
+	}

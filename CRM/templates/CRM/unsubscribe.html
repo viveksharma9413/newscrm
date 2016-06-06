@@ -1,0 +1,43 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News Mailing list - UnSubscribe</title>
+    <meta name="keywords" content="news unsubscribe" />
+	{% block styling %}
+		<link href="{% static 'css/unsubscribe.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'css/common.css' %}" rel="stylesheet" type="text/css">
+	{% endblock styling %}
+    {% block javascript %}
+	<script src="{% static 'js/validation.js' %}"></script>
+	{% endblock javascript %}
+
+</head>
+<body>
+    <div class="header">
+        <!--<div class="logo"><img src = "images/logo1.jpg"></div>-->
+        <h1>NEWS MAILER</h1>
+        <div class="logo"></div>
+        <a href="/CRM/home">HOME</a>
+        <a href="/CRM/subscribe">REGISTER</a>
+    </div>
+    <div class="footer">
+        <a href="/CRM/unsubscribe">UN SUBSCRIBE</a>
+    </div>
+
+    <div class="unsubscribeBox">
+        <h1>NEWS MAILING LIST<BR/>OPT-OUT</h1>
+        <font color="red" size="3"><b>{{message}}</b></font>
+        <br><center><table>
+        <form action="" method="post" name="unsubscribeForm">{% csrf_token %}
+            <tr><td>Email ID : <td><input type=email name="email" maxlength=50></tr>
+            <tr><td>Cell Phone : <td><input type=text name="phnNo" maxlength=10></tr>
+            <tr><td><td align=right><input type="reset" value="    Reset    " name="reset"><input onclick="Validate2(document.unsubscribeForm.email,document.unsubscribeForm.phnNo)" type=submit value="  Opt-out  " name=unsubscribe></tr>
+
+        </form>
+        </table></center>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News Mailing list - Admin Login</title>
+	{% block styling %}
+		<link href="{% static 'css/adminhome.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'css/common.css' %}" rel="stylesheet" type="text/css">
+	{% endblock styling %}
+
+</head>
+<body>
+    <div class="header">
+        <!--<div class="logo"><img src = "images/logo1.jpg"></div>-->
+        <h1>NEWS MAILER ADMIN</h1>
+        <div class="logo"></div>
+    </div>
+    <div class="footer">
+    </div>
+
+    <div class="Box">
+        <h1>LOGIN<BR/></h1>
+        <font color="red" size="3"><b>{{message}}</b></font>
+        <br><center><table>
+        <form action="" method="post" name="loginForm">{% csrf_token %}
+            <tr><td>Username : <td><input type=text name="username" maxlength=50></tr>
+            <tr><td>Password : <td><input type=password name="password" maxlength=20></tr>
+            <tr><td><td align=right><input type="reset" value="    Reset    " name="reset"><input type=submit value="  Login  " name="login"></tr>
+
+        </form>
+        </table></center>
+    </div>
+
+</body>
+</html>

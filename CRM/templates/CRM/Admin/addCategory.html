@@ -1,0 +1,58 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News Mailing list - Admin</title>
+    <meta name="keywords" content="news unsubscribe" />
+	{% block styling %}
+		<link href="{% static 'css/adminhome.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'css/common.css' %}" rel="stylesheet" type="text/css">
+	{% endblock styling %}
+    <script type="text/javascript">
+		function validate()
+    	{
+            catg=document.addCategoryForm.category.value;
+            if(catg==null || catg=="" || /^\s+$/.test(catg))
+            {
+                alert("Empty Entries not allowed!");
+                document.addCategoryForm.category.focus();
+                return false;
+            }
+            url=document.addCategoryForm.url.value;
+            if(url==null || url=="" || /^\s+$/.test(url))
+            {
+                alert("Specify the reuters archive URL from where you want to fetch data!");
+                document.addCategoryForm.url.focus();
+                return false;
+            }
+            return true;
+
+    	}
+	</script>
+</head>
+<body>
+    <div class="header">
+        <h1>NEWS MAILER ADMIN</h1>
+        <div class="logo"></div>
+        <a href="/CRM/adminHome">HOME</a>
+        <a href="/CRM/logout">LOGOUT</a>
+    </div>
+    <div class="footer">
+    </div>
+
+    <div class="Box">
+        <h1>ADD CATEGORY<BR/></h1>
+        <font color="red" size="3"><b>{{message}}</b></font>
+        <br><center><table>
+        <form action="" method="post" name="addCategoryForm">{% csrf_token %}
+            <tr><td>Category : <td><input type=text name="category" maxlength=50></tr>
+            <tr><td>News URL : <td><input type=text name="url" maxlength=200></tr>
+            <tr><td><td align=right><input type="reset" value="    Reset    " name="reset"><input onclick="validate()" type=submit value="  Add  " name="add"></tr>
+
+        </form>
+        </table></center>
+    </div>
+
+</body>
+</html>

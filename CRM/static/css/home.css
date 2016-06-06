@@ -1,0 +1,147 @@
+body
+    {
+        background-image:url("../images/home.jpg");
+        background-size:     cover;
+        background-repeat: no;
+        min-width : 1220px
+        background-repeat: no-repeat;
+		background-attachment: fixed ;
+		/*background-size: 100% 100%;*/
+    }
+h5
+    {
+			font-family: "Droid Sans";
+			font-weight: bold;
+            color:White;
+            font-size:20px;
+            text-align:center;
+    }
+h2,h3,h4,h6
+    {
+			font-family: "Droid Sans";
+			font-weight: bold;
+            color:black;
+            text-align:center;
+    }
+a
+	{
+		font-weight: bold;
+		font-family: "Droid Sans";
+		font-size: 18px;
+		padding-left:8px;
+		padding-right:8px;
+		border:2px;
+	}
+
+a:link
+	{
+		color: white;
+    		text-decoration: none;
+	}
+
+a:visited
+	{
+    		color: white;
+    		text-decoration: none;
+	}
+
+a:hover
+	{
+		color:black;
+		background-color:White;
+		text-decoration: none;
+	}
+
+a:active
+	{
+    	color: white;
+		text-decoration: none;
+	}
+#content
+    {
+        top: 230px;
+        position:relative;
+        text-align:center;
+    }
+
+#content a
+    {
+        font-weight: bold;
+        font-family: "Droid Sans";
+		font-size: 18px;
+		padding:5px 18px;
+		border:2px;
+		color:white;
+		background-color:black;
+		text-decoration:none;
+    }
+
+
+#containerContactUs
+    {
+        height:450px;
+        align:center;
+
+    }
+
+#containerAboutUs
+    {
+        height:480px;
+        width:950px;
+        position:relative;
+        background-color:white;
+        left:2px;
+        padding:20px 20px;
+        margin:90px 155px;
+        overflow: none;
+        align:center;
+        opacity:0.7;
+        border-radius:20px;
+    }
+
+hr
+    {
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: 150px;
+        margin-right: 150px;
+        border-style: inset;
+        border-width: 1px;
+    }
+
+#insideContent
+    {
+        margin-top :60px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom : 60px;
+    }
+     #insideContent1
+    {
+        position:relative;
+        float:left;
+        left:50px;
+        margin-top :60px;
+        width:450px;
+        height :250px;
+        /*margin-right: 700px;*/
+        margin-left: 130px;
+        margin-bottom : 60px;
+        background-color:black;
+        color:white;
+    }
+
+    #insideContent2
+    {
+       position:relative;
+        float:left;
+        left:50px;
+        margin-top :60px;
+        width:450px;
+        height :250px;
+        margin-left: 50px;
+        margin-bottom : 60px;
+        background-color:white;
+        color:black;
+    }

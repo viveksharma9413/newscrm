@@ -1,0 +1,94 @@
+.logo
+	{
+	   		top:15px;
+	   		left:50%;
+            display:block;
+            float:left;
+			width:100px;
+			height: 100px;
+			text-align:center;
+			position:relative;
+			color:brown;
+			background-image:url("../images/iconNews.png");
+			background-repeat: no-repeat;
+			/*background-attachment: fixed ;*/
+			background-size: 100px 100px;
+			margin:auto;
+
+	}
+h1
+	{
+			position:fixed;
+			left:20px;
+			font-size:30px;
+			font-family: "purisa";
+			font-weight: bold;
+	}
+
+.header
+	{
+		display:block;
+		position:fixed;
+		top:0px;
+		left:0;
+		width:95%;
+		height:70px;
+		text-align:right;
+		color:white;
+		background-color:black;
+		z-index:1;
+		padding-top:0px;
+		padding-right:5%;
+	}
+
+.header > a
+    {
+		position:relative;
+		top:22px;
+		font-weight: bold;
+		font-family: "Droid Sans";
+		font-size: 18px;
+		padding-left:8px;
+		padding-right:8px;
+		border:2px;
+	}
+
+.footer
+	{
+		display:block;
+		position:fixed;
+		width:100%;
+		height:50px;
+		left:0;
+		bottom:0;
+		text-align:center;
+		color:white;
+		background-color:black;
+		z-index:1;
+	}
+
+
+.header > a:link
+	{
+		color: white;
+    		text-decoration: none;
+	}
+
+.header > a:visited
+	{
+    		color: white;
+    		text-decoration: none;
+	}
+
+.header > a:hover
+	{
+		color:black;
+		background-color:White;
+		text-decoration: none;
+	}
+
+.header > a:active
+	{
+    	color: white;
+		text-decoration: none;
+	}
